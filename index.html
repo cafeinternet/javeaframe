@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
+    <head>
+        <title>jave aframe</title>
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+        <meta name="description" content="3D Application">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+        <script type="text/javascript" src="js/webxr.js"></script>
+        <script type="text/javascript" src="js/joystick.js"></script>
+        <script type="text/javascript" src="js/camera-cube-env.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body >
+        <a-scene  joystick shadow="type: basic; autoUpdate: false;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights: false;">
+            <a-entity environment="preset:contact;active:true;seed:14;skyType:gradient;skyColor:#478d54;horizonColor:#b696cb;lightPosition:0 2.01 -1;fog:0.1;;groundYScale:4.91;groundColor:#2e455f;grid:1x1;gridColor:#478d54" preset-switcher="" id="environment"><a-entity class="environment" position="0 50 0" light="intensity:0.6;color:#a3c6a9;groundColor:#2e455f;type:hemisphere"></a-entity><a-entity class="environment" position="0 2.01 -1" light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.6"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 4.91" shadow="cast:false;receive:false"></a-entity><a-entity class="environmentDressing environment"></a-entity><a-sky radius="200" theta-length="110" class="environment" geometry="" material="npot:false;shader:gradientshader;topColor:#478d54;bottomColor:#b696cb"></a-sky><a-entity id="stars" visible="false"></a-entity></a-entity>
+            
+            <!-- Assets -->
+            <a-assets>
+				<a-asset-item id="Mball.001" src="./assets/Mball.001.gltf"></a-asset-item>
+             
+            </a-assets>
+
+            <!-- Entities -->
+            
+			<a-entity animation-mixer id="#Mball.001" gltf-model="#Mball.001"  scale="1 1 1" position="-0.14454114437103271 1.7405173778533936 -3.3390780985355377" visible="true" shadow="cast: false" ></a-entity>
+
+                    
+            </a-entity>
+
+            <!-- Lights -->
+            
+
+            <!-- Sky -->
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
+<!-- Generated automatically by AFRAwME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
